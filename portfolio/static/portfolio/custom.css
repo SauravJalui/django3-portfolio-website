@@ -6,24 +6,45 @@
     color: rgb(255, 255, 255) !important;
 }
 
-body {
-    color: rgb(255, 255, 255);
-    font-family: 'Expletus Sans', cursive;
+/* .btn-danger { border-color: #ffffff; background-color: #f80606; color:#FFF;}
+.btn-danger:hover { border-color: #ffffff; background-color: #a70000; } */
+/* 
+.btn-danger { border-color: #ffffff; background-color: #f80606; color:#FFF;}
+.btn-danger:hover { border-color: #ffffff; background-color: #a70000; }
 
-    font-family: 'Montserrat', sans-serif;
+.btn-danger { border-color: #ffffff; background-color: #f80606; color:#FFF;}
+.btn-danger:hover { border-color: #ffffff; background-color: #a70000; }
 
-    font-family: 'Syne', sans-serif;
+.btn-danger { border-color: #ffffff; background-color: #f80606; color:#FFF;}
+.btn-danger:hover { border-color: #ffffff; background-color: #a70000; }
+
+.btn-danger { border-color: #ffffff; background-color: #f80606; color:#FFF;}
+.btn-danger:hover { border-color: #ffffff; background-color: #a70000; } */
+
+img {
+    float:left;
+    
+}
+h3 {
+    float: center;
+        
 }
 
+
+body {padding-left: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Mukta', sans-serif;
+
+}
 #blogtitle {
     
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 996px) {
     
     #hometext {     
-        font-size: 4rem;
+        font-size: 3rem;
     }
     #blogdetailtitle {
         font-size: 5rem;
