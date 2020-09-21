@@ -5,13 +5,13 @@
 
 {% block content %}
 
- <div class="container"> 
-  <br>
+
+ <div class="container-fluid">
+<br>
   <div class="row">
       <div class="col-md-12">
-          <img style='float:left;width:450px;height:450px; margin-right:70px;' src={% static 'portfolio/profilepicture.jpg' %}/>
-          <h3>Hi there! I am Saurav Jalui and I'm an Python Developer. Based in Mumbai, India looking for a dev role. Willing to locate anywhere (India or elsewhere).<br> <br> Passion about problem solving is what got me into code, being able to come up with creative solutions is what makes me stay. Open to learning new technologies.<br> <br> I enjoy learning and blogging about my learnings. When I look for a job, continuous learning is a priority.</h3> 
-          
+          <img style='float:left;width:450px;height:450px; margin-right:50px;' src={% static 'portfolio/profilepicture.jpg' %}/>
+          <h3>Hi there! I am Saurav Jalui and I'm an Python Developer. Based in Mumbai, India looking for a dev role. Willing to re-locate anywhere (India or elsewhere).<br> <br> Passion about problem solving is what got me into code, being able to come up with creative solutions is what makes me stay. Open to learning new technologies.<br> <br> I enjoy learning and blogging about my learnings. When I look for a job, continuous learning is a priority.</h3>  
       </div>
   </div>
 
@@ -28,21 +28,21 @@
   </div> -->
 </div> 
 <h1 class="mt-5">Projects</h1>
-<hr>
+
 <div class="row">
   {% for project in projects %}
-  <div class="col-lg-4.5 col-md-5">
+  <div class="col-lg-4 col-md-4">
 
     {% if project.url %}
     <a href="{{ project.url }}">
-      <img src="{{ project.image.url }}" class="img-fluid mb-2">
+      <img src="{{ project.image.url }}" class="img-fluid">
     </a>
     {% else %}
-
-    <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    <img src="{{ project.image.url }}" class="img-fluid">
     {% endif %}
-    <h2>{{ project.title }}</h2>
-    <p>{{ project.description }}</p>
+        <h2>{{ project.title }}</h2> 
+        <p>{{ project.description }}</p>
+        <a href="{{ project.githublink }}">Github </a>
 
   </div>
   {% endfor %}
